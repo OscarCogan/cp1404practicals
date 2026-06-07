@@ -8,6 +8,9 @@ def main():
     score = float(input("Enter score: "))
     parameter = return_parameter(score)
     print(f"User score {score} is {parameter}")
+    if parameter == "Excellent":
+        print("You get a prize!")
+
     score = random.randint(0, 100)
     parameter = return_parameter(score)
     print(f"Random: {score} = {parameter}")
