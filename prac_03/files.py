@@ -17,3 +17,10 @@ with open("numbers.txt") as in_file:
     for i in range(0, 2):
         sum_of_numbers += int(numbers[i])
     print(sum_of_numbers)
+
+# 4:
+sum_of_numbers = 0
+with open("numbers.txt") as in_file:
+    for line in in_file:
+        sum_of_numbers += int(line)
+    print(sum_of_numbers)
