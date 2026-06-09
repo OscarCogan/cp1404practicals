@@ -2,6 +2,7 @@
 CP1404/CP5632 - Practical
 Answer the following questions:
 1. When will a ValueError occur?
+    A ValueError will occur if the numerator or the denominator are not valid integers (entering Test or 19.5 will cause this)
 2. When will a ZeroDivisionError occur?
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
