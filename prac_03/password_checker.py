@@ -37,11 +37,13 @@ def is_valid_password(password):
     for character in password:
         if character.islower():
             number_of_lower += 1
+        if character.isupper():
+            number_of_upper += 1
         # TODO: count each kind of character (use str methods like isdigit)
         pass
 
     # TODO: if any of the 'normal' counts are zero, return False
-    if number_of_lower == 0:
+    if number_of_lower == 0 or number_of_upper == 0:
         return False
     # TODO: if special characters are required, then check the count of those
     # and return False if it's zero
